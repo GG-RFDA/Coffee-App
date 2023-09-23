@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chocolate"
+    tools:context=".MainActivity">
+    <!-- Задаём свойства для кнопки "Меню" -->
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="186dp"
+        android:layout_height="52dp"
+        android:onClick="OnClickMenu"
+        android:text="Меню"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+    <!-- Задаём свойства для кнопки "О нас" -->
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="184dp"
+        android:layout_height="50dp"
+        android:onClick="OnClickUs"
+        android:text="О нас"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+    <!-- Задаём свойства для кнопки "Контакты" -->
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="184dp"
+        android:layout_height="57dp"
+        android:onClick="OnClickContacts"
+        android:text="Контакты"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+    <!-- Задаём свойства для горизонтального разделителя -->
+    <View
+        android:id="@+id/horizontalDivider"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
+    <!-- Задаём свойства для иконки телефона -->
+    <ImageView
+        android:id="@+id/btnPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickPhone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnVk"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalDivider"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/phone" />
+    <!-- Задаём свойства для иконки VK -->
+    <ImageView
+        android:id="@+id/btnVk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickShop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEmail"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/btnPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalDivider"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/vk" />
+    <!-- Задаём свойства для иконки email -->
+    <ImageView
+        android:id="@+id/btnEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickEmail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/btnVk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalDivider"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
